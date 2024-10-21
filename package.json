@@ -14,6 +14,7 @@
     "@chakra-ui/react": "^2.10.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
+    "axios": "^1.7.7",
     "framer-motion": "^11.11.7",
     "mern-crud": "file:..",
     "react": "^18.3.1",
