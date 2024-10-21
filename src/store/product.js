@@ -1,7 +1,10 @@
 import { create } from 'zustand';
 
 // Replace with your actual backend URL
-const BACKEND_URL = 'http://localhost:3000/products' || 'https://vercel-server-theta-five.vercel.app//products';
+const BACKEND_URL = 
+  window.location.hostname === 'localhost'
+    ? 'http://localhost:3000/products'
+    : 'https://vercel-server-theta-five.vercel.app/products';
 
 export const useProductStore = create((set) => ({
     products: [],
